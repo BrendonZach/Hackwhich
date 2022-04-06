@@ -67,6 +67,7 @@
                                         </constraints>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="Jhd-ci-R6E" appends="YES" id="5Uy-yp-al3"/>
+                                            <outletCollection property="gestureRecognizers" destination="rsK-cy-8hm" appends="YES" id="bgE-V8-0yr"/>
                                         </connections>
                                     </stackView>
                                 </subviews>
@@ -83,6 +84,7 @@
                     <connections>
                         <outlet property="currentLetterLabel" destination="5QW-DS-vti" id="Zx7-tU-3di"/>
                         <outlet property="stackView" destination="YAP-Bj-BR9" id="tHz-vO-WsZ"/>
+                        <outlet property="stackView2" destination="mkP-Q4-WfA" id="WBf-C6-vSr"/>
                         <outletCollection property="wordLabel" destination="6MA-iT-2fg" collectionClass="NSMutableArray" id="Yci-EE-T3N"/>
                         <outletCollection property="wordLabel" destination="IcD-dz-Liu" collectionClass="NSMutableArray" id="JPK-c1-FIc"/>
                         <outletCollection property="wordLabel" destination="XDq-AU-m8r" collectionClass="NSMutableArray" id="4AQ-7R-jyo"/>
@@ -92,6 +94,11 @@
                 <tapGestureRecognizer id="Jhd-ci-R6E">
                     <connections>
                         <action selector="whenTapped:" destination="BYZ-38-t0r" id="j0m-7x-P58"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="rsK-cy-8hm">
+                    <connections>
+                        <action selector="tapped2:" destination="BYZ-38-t0r" id="dAn-4t-WQH"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
